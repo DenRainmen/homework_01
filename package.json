@@ -1,5 +1,5 @@
 {
-  "homepage": "https://DenRainmen.github.io.homework_01",
+  "homepage": "https://DenRainmen.github.io/homework_01",
   "name": "vite",
   "private": true,
   "version": "0.0.0",
@@ -7,9 +7,12 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
+    "gh-pages": "^5.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-redux": "^8.0.5",
